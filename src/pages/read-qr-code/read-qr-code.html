@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lire un QR code</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- Bouton pour lire depuis la caméra -->
+  <button ion-button (click)="readFromCamera()">Lire depuis la caméra</button>
+  
+  <!-- Bouton pour lire depuis un fichier -->
+  <button ion-button (click)="readFromFile()">Lire depuis un fichier</button>
+
+  <div>{{ decodedText }}</div>
+
+</ion-content>
